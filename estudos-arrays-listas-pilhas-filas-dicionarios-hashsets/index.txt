@@ -1,0 +1,113 @@
+ArraY
+
+- Array: É o termo genérico pra uma coleção de elementos organizados por índice, geralmente do mesmo tipo. 
+Ele pode ser unidimensional (tipo um vetor) ou multidimensional (tipo uma matriz)
+
+- Vetor: Vetor é o array unidimensional, ou seja, uma sequência de valores em linha reta, tipo uma fila. Ele armazena dados em uma única dimensão
+
+         vetor = [5, 10, 15, 20, 25]
+
+- Matriz: Matriz é o array bidimensional (ou até multidimensional). Ou seja, uma tabela com linhas e colunas. 
+Serve pra representar coisas como um tabuleiro, uma planilha ou qualquer dado que precise de duas coordenadas pra ser acessado.
+
+         matriz = [
+            [1, 2, 3],
+            [4, 5, 6],
+            [7, 8, 9]
+         ]
+
+************                     ************                           ************                       ************
+
+Listas
+
+- Lista Ligada: Uma lista ligada é uma estrutura onde cada elemento (chamado de nó) aponta pro próximo. 
+Em vez de usar posições fixas de memória como num array, cada item sabe quem vem depois.
+
+         [1] → [2] → [3] → null
+
+- Prós:
+Inserir/remover no meio da lista é fácil.
+Tamanho pode mudar dinamicamente.
+
+- Contras:
+Acesso direto é lento (tem que percorrer a lista).
+Ocupa mais memória por causa dos ponteiros.
+
+- Lista Duplamente Ligada: Cada nó aponta tanto pro próximo quanto pro anterior
+
+         null ← [1] ⇄ [2] ⇄ [3] → null
+
+- Prós:
+Dá pra navegar pra frente e pra trás.
+Inserções e remoções mais flexíveis.
+
+- Contras:
+Mais memória (mais ponteiros).
+Um pouco mais complexa de implementar.
+
+
+************                     ************                           ************                       ************
+
+Pilha
+
+- Regra: LIFO — Last In, First Out (o último que entra é o primeiro que sai).
+
+- Operações principais:
+push(item) → empilha
+pop() → desempilha
+peek() ou top() → vê o topo sem tirar
+
+- Uso comum:
+Desfazer ação (Ctrl + Z)
+Pilha de chamadas de função (stack trace)
+
+************                     ************                           ************                       ************
+
+Fila
+
+- Regra: FIFO — First In, First Out (o primeiro que entra é o primeiro que sai).
+
+- Operações principais:
+enqueue(item) → entra na fila
+dequeue() → sai da fila
+
+- Uso comum:
+Impressoras
+Buffers de dados
+Processamento de tarefas em ordem
+
+************                     ************                           ************                       ************
+
+Dicionário
+
+- No dicionário você armazena pares chave-valor. Como um dicionário de verdade: você procura a palavra (chave) e pega o significado (valor).
+
+         usuario = {
+            "nome": "Alan",
+            "idade": 25,
+            "cidade": "Maceió"
+         }
+
+- Uso comum:
+Representar objetos
+Indexar dados por nomes ou identificadores
+Contagem de ocorrências
+
+- Vantagem:
+Acesso super rápido por chave (quando bem implementado com hash).
+
+************                     ************                           ************                       ************
+
+HashSet
+
+- É uma coleção que só aceita elementos únicos. Tenta colocar algo repetido? Ele ignora com classe. 
+A força dele tá na velocidade: busca, inserção e remoção são quase
+
+         frutas = set()
+         frutas.add("maçã")
+         frutas.add("banana")
+         frutas.add("maçã")  # Não adiciona de novo
+
+- Usos comuns:
+Garantir que não tenha item repetido
+Verificar se algo existe na coleção, e fazer isso rapidinho
