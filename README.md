@@ -16,3 +16,10 @@
 ### - Reverter uma palavra (Rua = Aur)
 ### - Verificar se uma palavra é um palíndromo
 ### - Verificar se uma palavra é um anagrama
+
+## 3.Estudos
+### - Pequenos resumos sobre Listas ligadas e duplamente ligadas
+### - Array
+### - Fila
+### - Pilha
+### - HashSet
