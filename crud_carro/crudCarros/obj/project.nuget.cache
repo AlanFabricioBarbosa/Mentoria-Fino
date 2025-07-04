@@ -1,0 +1,23 @@
+{
+  "version": 2,
+  "dgSpecHash": "kij+qtEPzgnyVEDgnhT4IVX63S9V85bSLBWw343H9+EtLkkNwiWmtb22sA+seo7yTSyQjCaqZrT7+uy2+HINTA==",
+  "success": true,
+  "projectFilePath": "/home/alan/Documentos/Mentoria-Fino/crud_carro/crudCarros/crudCarros.csproj",
+  "expectedPackageFiles": [
+    "/home/alan/.nuget/packages/microsoft.aspnetcore.openapi/8.0.17/microsoft.aspnetcore.openapi.8.0.17.nupkg.sha512",
+    "/home/alan/.nuget/packages/microsoft.data.sqlite/9.0.6/microsoft.data.sqlite.9.0.6.nupkg.sha512",
+    "/home/alan/.nuget/packages/microsoft.data.sqlite.core/9.0.6/microsoft.data.sqlite.core.9.0.6.nupkg.sha512",
+    "/home/alan/.nuget/packages/microsoft.extensions.apidescription.server/8.0.0/microsoft.extensions.apidescription.server.8.0.0.nupkg.sha512",
+    "/home/alan/.nuget/packages/microsoft.openapi/1.6.23/microsoft.openapi.1.6.23.nupkg.sha512",
+    "/home/alan/.nuget/packages/sqlitepclraw.bundle_e_sqlite3/2.1.10/sqlitepclraw.bundle_e_sqlite3.2.1.10.nupkg.sha512",
+    "/home/alan/.nuget/packages/sqlitepclraw.core/2.1.10/sqlitepclraw.core.2.1.10.nupkg.sha512",
+    "/home/alan/.nuget/packages/sqlitepclraw.lib.e_sqlite3/2.1.10/sqlitepclraw.lib.e_sqlite3.2.1.10.nupkg.sha512",
+    "/home/alan/.nuget/packages/sqlitepclraw.provider.e_sqlite3/2.1.10/sqlitepclraw.provider.e_sqlite3.2.1.10.nupkg.sha512",
+    "/home/alan/.nuget/packages/swashbuckle.aspnetcore/9.0.1/swashbuckle.aspnetcore.9.0.1.nupkg.sha512",
+    "/home/alan/.nuget/packages/swashbuckle.aspnetcore.swagger/9.0.1/swashbuckle.aspnetcore.swagger.9.0.1.nupkg.sha512",
+    "/home/alan/.nuget/packages/swashbuckle.aspnetcore.swaggergen/9.0.1/swashbuckle.aspnetcore.swaggergen.9.0.1.nupkg.sha512",
+    "/home/alan/.nuget/packages/swashbuckle.aspnetcore.swaggerui/9.0.1/swashbuckle.aspnetcore.swaggerui.9.0.1.nupkg.sha512",
+    "/home/alan/.nuget/packages/system.memory/4.5.3/system.memory.4.5.3.nupkg.sha512"
+  ],
+  "logs": []
+}
