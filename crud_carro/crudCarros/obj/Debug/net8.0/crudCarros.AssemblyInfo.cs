@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("crudCarros")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8c611e7a4d08d75e7cbc85cdca1491f33ac128c2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ad826c3482286639ed8aa479bf790adb565f2715")]
 [assembly: System.Reflection.AssemblyProductAttribute("crudCarros")]
 [assembly: System.Reflection.AssemblyTitleAttribute("crudCarros")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

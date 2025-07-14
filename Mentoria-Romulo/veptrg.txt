@@ -1,0 +1,121 @@
+
+📅 Roteiro Aula Chat — Introdução ao Linux com Killercoda
+
+✅ Parte 1 — Apresentação
+	• Apresente-se rapidamente.
+	• Explique o objetivo da aula:
+
+
+👉 https://killercoda.com/playgrounds/scenario/ubuntu
+
+✅ Parte 1.1 — O que é uma Distribuição Linux?
+	Uma distribuição Linux (ou "distro") é um sistema operacional baseado no núcleo (kernel) Linux, combinado com um conjunto de softwares, ferramentas, gerenciador de pacotes e interface personalizada.
+💡 Exemplos comuns de distribuições:
+	• Ubuntu: amigável para iniciantes, amplamente usada em servidores e desktops.
+	• Debian: base do Ubuntu, famosa por sua estabilidade.
+	• Red Hat / CentOS / AlmaLinux: voltadas para servidores corporativos.
+	• Arch Linux: mais minimalista e customizável (para usuários avançados).
+🔧 Por que existem várias distros?
+	• Cada distribuição atende a públicos e propósitos diferentes: algumas são para servidores, outras para desktops ou embarcados.
+	• A principal diferença está nos gerenciadores de pacotes, filosofia de design, ciclos de atualização e ferramentas pré-instaladas.
+
+
+✅ Parte 2 — Estrutura do Linux
+	• Explique rapidamente:
+		○ Tudo no Linux é arquivo (incluindo dispositivos e processos).
+		○ Hierarquia típica: / (root), /home, /etc, /var, /usr, /bin, /sbin, /dev.
+		○ Principais pastas do Linux:
+				• / → raiz do sistema, o topo da hierarquia, de onde tudo parte.
+				• /home → onde ficam os diretórios dos usuários (ex.: /home/romulo).
+				• /etc → arquivos de configuração do sistema e dos serviços.
+				• /var → arquivos variáveis: logs, filas, spools, dados que mudam com o tempo.
+				• /usr → programas e bibliotecas instalados (não confundir com usuários!).
+				• /bin → comandos essenciais disponíveis para todos (ex.: ls, cp).
+				• /sbin → comandos administrativos (ex.: ifconfig, reboot), geralmente para root.
+				• /dev → arquivos que representam dispositivos do sistema (discos, terminais, etc.).
+
+			
+		○ Demonstração:
+ls /
+tree -L 1 /
+
+✅ Parte 3 — Comandos Básicos
+• Navegação:
+pwd                                # mostra onde estou
+ls -l                              # lista arquivos e detalhes
+cd /home                           # muda de diretório
+cd ~                               # volta para home
+touch arquivo.txt                  # cria arquivo vazio
+echo "Hello Linux" > arquivo.txt   # escreve no arquivo
+cat arquivo.txt                    # lê conteúdo
+more arquivo.txt
+tail -f 
+cp arquivo.txt copia.txt           # copia arquivo
+mv copia.txt nova.txt              # renomeia/move
+rm nova.txt                        # remove arquivo
+mkdir nova_pasta                   # cria pasta
+
+✅ Parte 4 — Permissões e Usuários
+Explique brevemente:
+	• Cada arquivo tem usuário, grupo e permissões (rwx).
+	• Comando prático:
+ls -l arquivo.txt
+chmod u+x arquivo.txt                                        # dá permissão de execução ao dono
+chmod 755 script.sh                                          # define permissão rwxr-xr-x
+		[ usuário ][ grupo ][ outros ]
+			rwx       r-x       r-x
+7 (rwx) → dono (usuário) pode ler (r), escrever (w) e executar (x).
+
+5 (r-x) → grupo pode ler (r) e executar (x), mas não escrever.
+
+5 (r-x) → outros podem ler (r) e executar (x), mas não escrever.
+
+chown ubuntu:ubuntu arquivo.txt                              # muda dono/grupo (precisa sudo)
+
+✅ Parte 5 — Processos e Monitoramento
+	• Demonstração rápida:
+ps aux | head                                                # lista processos
+top                                                          # monitor em tempo real
+kill -9 <pid>                                                   # termina processo
+
+✅ Parte 6 — Scripts Simples (Automação)
+📂 Crie dois scripts simples para demonstrar:
+
+Script 1: Hello Loop
+	Um script que imprime “Hello Linux” 5 vezes com pause.
+nano hello_loop.sh
+Conteúdo:
+#!/bin/bash
+for i in {1..5}; do
+  echo "Hello Linux #$i"
+  sleep 1
+done
+
+Depois:
+chmod +x hello_loop.sh
+./hello_loop.sh
+
+Script 2: Checagem de Disco
+	Um script que verifica espaço em disco e alerta se passar de 80%.
+nano check_disk.sh
+Conteúdo:
+#!/bin/bash
+usage=$(df / | grep / | awk '{print $5}' | sed 's/%//')
+if [ "$usage" -gt 80 ]; then
+  echo "Alerta: Uso de disco acima de 80%!"
+else
+  echo "Tudo OK: Uso de disco em $usage%"
+fi
+Depois:
+chmod +x check_disk.sh
+./check_disk.sh
+
+✅ Parte 7 — Perguntas e Resumo
+	• Reforce que prática é essencial.
+	• Sugira estudar:
+		○ man comando para ler manual.
+		○ Praticar no terminal sempre que puder.
+		○ Explorar tópicos como bash scripting, gerenciamento de pacotes (apt), rede, logs.
+
+
+
